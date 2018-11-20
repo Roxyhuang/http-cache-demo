@@ -16,7 +16,7 @@ http.createServer(function (req, res) {
 
         // 默认设置了五分钟缓存，可以注销以下注释并注册上面两行代码，测试不缓存主文档
         // res.setHeader('Cache-Control', "no-cache"); // 不缓存主文档
-        
+
         res.setHeader('ETag', '33a64df551425fcc55e4d42a148795d9f25f89d9');
         res.setHeader('Content-Type', 'text/html');
         res.writeHead('200', "OK");
